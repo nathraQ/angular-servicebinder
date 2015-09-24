@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="de">
+    <meta charset="UTF-8">
+    <title>servicebinder example</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.0/angular.js"></script>
+    <!--<script type="text/javascript" src="../src/sudomake.prototype.js"></script>-->
+    <!--<script type="text/javascript" src="../src/sudomake.servicebinder.service.js"></script>-->
+    <script type="text/javascript" src="../dist/sudomake.servicebinder.service.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body data-ng-app="ExampleApp">
+    <div class="container" data-ng-controller="ExampleMainController">
+        <h1>SudomakeServicebinderService</h1>
+        <p>
+            string: {{exampleString}}
+        </p>
+        <p>
+            array: {{exampleArray}}
+        </p>
+        <p>
+            object: {{exampleObject}}
+        </p>
+        <p>
+            string: <input type="text" data-ng-model="exampleString">
+        </p>
+        <p>
+            array: <button data-ng-click="addExampleStringToExampleArray()">add</button>
+            array: <button data-ng-click="removeFromExampleArray()">remove</button>
+        </p>
+        <p>
+            object foo: <input type="text" data-ng-model="exampleObject.foo">
+            object bazz: <input type="text" data-ng-model="exampleObject.bazz">
+        </p>
+    </div>
+</body>
+</html>
