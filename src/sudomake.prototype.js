@@ -1,3 +1,4 @@
+// ucfirst start
 if (!String.prototype.ucfirst) {
     Object.defineProperty(String.prototype, 'ucfirst', {
         enumerable: false,
@@ -8,7 +9,9 @@ if (!String.prototype.ucfirst) {
         }
     });
 }
+// ucfirst end
 
+// callByString start
 if (!Object.prototype.callByString) {
     Object.defineProperty(Object.prototype, 'callByString', {
         enumerable: false,
@@ -28,3 +31,4 @@ if (!Object.prototype.callByString) {
         }
     });
 }
+// callByString end
